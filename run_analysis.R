@@ -8,4 +8,3 @@ if(!file.exists('./uci_smartphone_dataset/Dataset.zip')){
   download.file(dataUrl, destfile = "./uci_smartphone_dataset/Dataset.zip", method = "libcurl")
   unzip('./uci_smartphone_dataset/Dataset.zip');
 }
-
