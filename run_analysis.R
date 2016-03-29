@@ -8,3 +8,9 @@ if(!file.exists('./uci_smartphone_dataset/Dataset.zip')){
   download.file(dataUrl, destfile = "./uci_smartphone_dataset/Dataset.zip", method = "libcurl")
   unzip('./uci_smartphone_dataset/Dataset.zip');
 }
+
+x_train <- read.table('UCI HAR Dataset/train/X_train.txt')
+x_test <- read.table('UCI HAR Dataset/test/X_test.txt')
+x_bind <- rbind(x_train, x_test)
+
+
